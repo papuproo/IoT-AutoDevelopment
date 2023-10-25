@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+/*Aqui van las rutas, aun falta implementar los prefijos y el Resource*/
+/*Cabe destacar que falta muchisima documentacion */
 
 Route::view('/', 'index')->name('index');
 Route::view('/iot', 'iot')->name('iot');
