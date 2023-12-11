@@ -19,15 +19,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'index')->name('index');
 Route::view('/iot', 'iot')->name('iot');
+Route::post('/iot', [iotController::class, 'enviarDatosDesdeESP']);
 Route::view('/jetstream', 'jetstream')->name('jetstream');
+
+//Route::resource('datos', [ProjectController::class])->names('projects')->parameters(['datos'=>'project']);
+
 Route::get('/datos', [ProjectController::class,'index'])->name('projects.index');
 Route::get('/datos/create', [ProjectController::class, 'create'])->name('projects.create');
 Route::get('/datos/{project}/editar', [ProjectController::class, 'edit'])->name('projects.edit');
 Route::patch('/datos/{project}', [ProjectController::class, 'update'])->name('projects.update');
 Route::post('/datos', [ProjectController::class, 'store'])->name('projects.store');
 Route::get('/datos/{id}', [ProjectController::class, 'show'])->name('projects.show');
-Route::post('iot', [iotcontroller::class,'form']);
-
+//Route::post('iot', [iotcontroller::class,'form']);
 Route::delete('/datos/{project}', [ProjectController::class, 'destroy'])->name('projects.destroy');
 
 //Route::resource('projects', [datoscontroller::class]);

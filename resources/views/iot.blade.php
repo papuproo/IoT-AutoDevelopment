@@ -23,4 +23,13 @@
         
         <button>Enviar</button>
     </form>
+    <br>
+    <script src="{{ asset('*\grafica.js') }}"></script>
+    <h4>En esta parte, vamos a introducir de una vez el funcionamiento de nuestros dispositivos.</h4>
+    <ul>
+        <li>Práctica 6</li>
+        <br>En esta práctica, debemos diseñar, desarrollar e implementar un Sistema de Control Digital con el módulo NodeMCU que sea capaz de manipular o provocar un cambio en una variable o magnitud de un sistema físico mediante un actuador.
+        <br>
+        <canvas id="grafica" width="400" height="400"></canvas>
+    </ul>
 @endsection

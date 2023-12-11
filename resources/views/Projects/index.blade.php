@@ -6,6 +6,7 @@
 <h1>Analisis de datos</h1>
 <br><br><h5>En el futuro, aqui se debera poder analizar los datos obtenidos de nuestros dispositivos, aplicando algoritmos de mineria de datos y estadistica, pero por lo mientras esta funcionando para el envio, edicion y eliminacion de registros de la base de datos</h5>
 <a href="{{ route('projects.create') }}">Crear proyecto</a>
+<br><br><h5>Lista de proyectos existentes, puedes crear uno con el enlace de arriba o entrar a uno para manipularlo</h5>
 <ul>
         @forelse($projects as $port)
 

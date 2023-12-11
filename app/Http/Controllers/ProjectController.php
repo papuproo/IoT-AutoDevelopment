@@ -44,7 +44,7 @@ class ProjectController extends Controller
     {
         //Sirve para crear nuevos registros en las bases de datos
         Project::create($request->validated() );
-        return redirect()->route('projects.index');
+        return redirect()->route('projects.index')->with('status'. 'El proyecto fue creado con exito');
     }
 
 
